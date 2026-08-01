@@ -1,0 +1,386 @@
+/* 
+# ---------------------------------------
+# cybrcore    lucid theme for waybar
+# Project:    https://github.com/cybrcore/cybr-waybar
+# Author:     scherrer-txt   |   License:     GPL-3.0
+# Source:     ~/.config/waybar/style.css
+# ---------------------------------------
+*/
+
+/* === VARIABLES === */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === GLOBAL === */
+
+* {
+	font-family: JetBrainsMono Nerd Font;
+	font-size: 15px;
+	letter-spacing: -0.05em;
+	font-weight: 400;
+	min-height: 0;
+}
+
+window#waybar {
+	background: transparent;
+	opacity: 1;
+}
+
+window#waybar.hidden {
+	opacity: 0;
+}
+
+
+/* === MODULE DEFAULTS === */
+
+#custom-updates,
+#custom-music,
+#custom-arch,
+#workspaces,
+#window {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	padding: 0 16px;
+	color: #F24848;
+}
+
+
+/* === BUTTON SIZE === */
+
+#tray,
+#custom-brightness,
+#language,
+#bluetooth,
+#custom-gpu-usage,
+#custom-wf-recorder,
+#custom-updates,
+#custom-notifications,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#temperature.cpu,
+#temperature.gpu,
+#battery,
+#backlight {
+	padding: 0 16px;
+	min-width: 15px;
+}
+
+
+/* === POWERLINE ARROWS === */
+
+#custom-arrow-left-no1 {
+	background-image: url('svg/no1-left.svg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#custom-arrow-right-no1 {
+	background-image: url('svg/no1-right.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#custom-arrow-left-re0 {
+	background-image: url('svg/re0-left.svg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #05070D;
+}
+
+#custom-arrow-right-re0 {
+	background-image: url('svg/re0-right.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #05070D;
+}
+
+#custom-arrow-left-gr0 {
+	background-image: url('svg/gr0-left.svg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #05070D;
+}
+
+#custom-arrow-right-gr0 {
+	background-image: url('svg/gr0-right.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #05070D;
+}
+
+
+/* === ARCH LOGO === */
+
+#custom-arch {
+	color: #030408;
+	background-color: #F24848;
+	font-weight: bold;
+}
+
+#custom-arch:hover {
+	color: #030408;
+	background-color: #30F291;
+}
+
+
+/* === WORKSPACES === */
+
+#workspaces {
+	background-color: #05070D;
+	border: none;
+}
+
+#workspaces button {
+	border-radius: 16px;
+	border: none;
+	margin: 0;
+	min-width: 30px;
+	font-weight: bolder;
+	color: #F24848;
+	background: transparent;
+}
+
+#workspaces button label {
+	font-size: 15px;
+	padding: 0 10px;
+	color: #F24848;
+}
+
+#workspaces button.active label {
+	color: #30F291;
+}
+
+#workspaces button:hover {
+	background-color: #331215;
+}
+
+#workspaces button:hover label {
+	color: #F24848;
+}
+
+#workspaces button.active:hover {
+	background-color: #0C3423;
+}
+
+#workspaces button.active label {
+	color: #30F291;
+}
+
+#workspaces button.urgent {
+	background-color: #F2D230;
+}
+
+#workspaces button.urgent label {
+	color: #332D10;
+}
+
+/* === CLOCKS === */
+
+#clock.time,
+#clock.date {
+	color: #F24848;
+	background-color: #05070D;
+	padding: 0 32px;
+}
+
+#clock.time:hover,
+#clock.date:hover {
+	color: #F24848;
+	background-color: #331215;
+}
+
+
+/* === SYSTEM METRICS === */
+#battery,
+#cpu,
+#memory,
+#temperature,#custom-gpu-usage,
+#temperature.cpu,
+#temperature.gpu{
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#temperature.critical {
+	color: #030408;
+	background-color: #F2D230;
+}
+
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#temperature.cpu:hover,
+#temperature.gpu:hover,
+#temperature.critical:hover,#battery:hover  {
+	color: #F24848;
+	background-color: #331215;
+}
+
+
+/* === NETWORK & AUDIO === */
+
+#network {
+	background-color: #05070D;
+	color: #F24848;
+}
+
+#network.disconnected {
+	color: #898D99;
+	background-color: #F26118;
+}
+
+#network.linked {
+	color: #30F291;
+	background-color: #05070D;
+}
+
+#pulseaudio {
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#pulseaudio.muted {
+	color: #631F21;
+}
+
+#network:hover,
+#pulseaudio:hover {
+	color: #F24848;
+	background-color: #331215;
+}
+
+#pulseaudio.muted:hover {
+	color: #631F21;
+	background-color: #331215;
+}
+
+
+/* === MUSIC === */
+
+#custom-music {
+	background-color: #30F291;
+	color: #030408;
+	padding: 0 32px;
+	border: none;
+}
+
+
+/* === NOTIFICATIONS === */
+
+#custom-notifications {
+	background-color: #05070D;
+	color: #F24848;
+	font-size: 20px;
+}
+
+#custom-notifications:hover {
+	color: #F24848;
+	background-color: #631F21;
+}
+
+#custom-notifications.dnd-none {
+	color: #631F21;
+}
+
+#custom-notifications.dnd-none:hover {
+	color: #631F21;
+	background-color: #331215;
+}
+
+/* === UPDATES === */
+
+#custom-updates {
+	color: #898D99;
+	font-size: 20px;
+	margin: 0 20px;
+}
+
+#custom-updates:hover {
+	background-color: #15633F;
+}
+
+
+/* === MISC === */
+
+#custom-wf-recorder {
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#bluetooth {
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#language {
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#custom-brightness {
+	background-color: #05070D;
+}
+
+#custom-brightness:hover {
+	background-color: #631F21;
+}
+
+#custom-brightness.max {
+	color: #F24848;
+}
+
+#custom-brightness.high {
+	color: #F2D230;
+}
+
+#custom-brightness.mid {
+	color: #898D99;
+}
+
+#custom-brightness.low {
+	color: #29BECC;
+}
+
+#custom-brightness.min {
+	color: #F24848;
+}
+
+#tray {
+	color: #F24848;
+	background-color: #05070D;
+}
+
+#custom-wf-recorder:hover,
+#bluetooth:hover,
+#language:hover {
+	color: #F24848;
+	background-color: #331215;
+}
+
+/* === WINDOW === */
+
+#window {
+	color: #030408;
+	background-color: #F24848;
+	padding: 0 32px;
+	border: none;
+}
