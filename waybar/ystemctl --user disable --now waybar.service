@@ -1,0 +1,21 @@
+○ waybar.service - Highly customizable Wayland bar for Sway and Wlroots based compositors
+     Loaded: loaded (]8;;file://Mahoraga143/usr/lib/systemd/user/waybar.service\/usr/lib/systemd/user/waybar.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: inactive (dead) since Mon 2026-08-03 17:05:13 PST; 5min ago
+   Duration: 2min 28.302s
+ Invocation: 0defd8023f544d5997029f166e81fbe5
+       Docs: ]8;;https://github.com/Alexays/Waybar/wiki/\https://github.com/Alexays/Waybar/wiki/]8;;\
+    Process: 1227 ExecStart=/usr/bin/waybar (code=killed, signal=TERM)
+   Main PID: 1227 (code=killed, signal=TERM)
+   Mem peak: 57.2M
+        CPU: 1.711s
+
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: Discharging
+Aug 03 17:02:47 Mahoraga143 waybar[1227]: [2026-08-03 17:02:47.692] [info] Bar configured (width: 1920, height: 31) for output: eDP-1
+Aug 03 17:05:13 Mahoraga143 systemd[936]: waybar.service: Consumed 1.711s CPU time over 2min 28.302s wall clock time, 57.2M memory peak.
